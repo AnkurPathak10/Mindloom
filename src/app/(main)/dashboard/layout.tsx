@@ -1,12 +1,6 @@
 import React from 'react';
 
-interface LayoutProps {
-  children: React.ReactNode;
-  params: Record<string, string>;
-}
-
-// ✅ Make it async if any dynamic segments are used in parent routes
-const Layout = async ({ children, params }: LayoutProps) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main className="flex overflow-hidden h-screen">
       {children}
