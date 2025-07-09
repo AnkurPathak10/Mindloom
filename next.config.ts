@@ -4,7 +4,6 @@ const nextConfig = {
   experimental: {
     // This is available in Next.js 14.0+, and works in 15.x
     serverActions: {},
-    appDir: true,
   },
   eslint: {
     ignoreDuringBuilds: true, // ✅ Skip ESLint errors during build
