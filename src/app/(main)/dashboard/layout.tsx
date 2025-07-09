@@ -1,13 +1,13 @@
 import React from 'react'
 
 interface LayoutProps{
-    children: React.ReactNode;
-    params: any;
+    children : React.ReactNode;
+    params : Record<string, string>;
 }
 
 const Layout:React.FC<LayoutProps> = ({children, params}) => {
   return (
-    <main className='flex overflow-hidden h-screen'>
+    <main className='flex over-hidden h-screen'>
         {children}
     </main>
   )

@@ -177,10 +177,10 @@ const Header = () => {
         </NavigationMenu>
         <aside className='flex w-full gap-2 justify-end'>
            <Link href={'/login'}>
-            <Button variant="btn-secondary" className="p-1 hidden sm:block">Login</Button>
+            <Button variant="btn-secondary" className="p-1 hidden sm:block hover:cursor-pointer">Login</Button>
            </Link>
            <Link href={'/signup'}>
-            <Button variant="btn-primary" className="whitespace-nowrap">Sign Up</Button>
+            <Button variant="btn-primary" className="whitespace-nowrap hover:cursor-pointer">Sign Up</Button>
            </Link>
         </aside>
     </header>
