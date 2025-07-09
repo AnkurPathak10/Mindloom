@@ -11,7 +11,9 @@ import { getUserSubscriptionStatus } from '@/lib/supabase/queries';
 
 
 const DashboardPage = async () => {
-  const supabase = createServerComponentClient({ cookies });
+  const supabase = createServerComponentClient({ 
+    cookies: () => cookies(),
+  });
 
   const {
     data: { user },
